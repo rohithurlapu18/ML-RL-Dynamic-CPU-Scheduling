@@ -1,0 +1,30 @@
+{
+    "model": "XGBRanker",
+    "objective": "rank:pairwise",
+    "features": [
+        "task_type",
+        "cpu_avg",
+        "cpu_max",
+        "mem_avg",
+        "mem_max",
+        "task_duration",
+        "cpu_demand_ratio",
+        "mem_demand_ratio",
+        "log_cpu_demand",
+        "log_mem_demand",
+        "cpu_num",
+        "mem_size",
+        "cpu_util",
+        "mem_util",
+        "cpu_pressure",
+        "mem_pressure",
+        "bottleneck_pressure"
+    ],
+    "random_seed": 42,
+    "train_tasks": 6285,
+    "validation_tasks": 1347,
+    "test_tasks": 1347,
+    "train_top1_accuracy": 0.9998408910103421,
+    "validation_top1_accuracy": 0.9977728285077951,
+    "test_top1_accuracy": 0.9933184855233853
+}

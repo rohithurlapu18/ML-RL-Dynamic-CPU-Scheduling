@@ -1,0 +1,137 @@
+Project Title:
+Smart Resource Allocation Using Reinforcement Learning
+
+Core Problem:
+Efficiently allocate computing resources to workloads/tasks
+in a computing environment while minimizing resource wastage
+and improving system performance.
+
+Main Objectives:
+1. Analyze real-world computing workload data.
+2. Study CPU and resource utilization patterns.
+3. Implement traditional/greedy resource allocation strategies.
+4. Develop machine learning models for resource-related prediction.
+5. Develop a reinforcement learning based resource allocation system.
+6. Compare RL with traditional/greedy approaches.
+
+Primary Dataset:
+Alibaba Cluster Workload Dataset
+
+Resource Focus:
+- CPU utilization
+- Memory utilization
+- Task/instance workload
+- Machine/resource availability
+
+Evaluation:
+- CPU utilization
+- Resource utilization
+- Task completion/performance
+- Resource wastage
+- Allocation efficiency
+
+RL:
+Q-Learning initially
+
+Comparison:
+RL-based allocation vs traditional/greedy allocation.
+
+
+
+batch_task
+    ↓
+Task/job information
+
+batch_instance
+    ↓
+Task instances + machine assignment
+
+machine_meta
+    ↓
+Machine characteristics/status
+
+machine_usage
+    ↓
+Time-series machine resource usage
+
+
+
+Dataset Schema
+
+Workload information:
+- Task CPU requirement
+- Task memory requirement
+- Task type
+- Task start/end time
+
+Instance information:
+- Instance CPU average/max
+- Instance memory average/max
+- Host machine
+
+Machine information:
+- CPU count
+- Memory capacity
+- CPU utilization
+- Memory utilization
+- Network and disk utilization
+
+Initial ML/RL objective:
+Determine an efficient machine/resource allocation decision
+for incoming workloads based on task requirements and
+current resource availability.
+
+
+Decision Formulation
+
+Primary Decision:
+Select the most suitable machine for an incoming workload.
+
+ML:
+Input:
+- Task resource requirements
+- Task characteristics
+- Current machine resource state
+
+Output:
+- Candidate/selected machine
+
+RL:
+State:
+- Task requirements
+- Current machine resource availability/utilization
+
+Action:
+- Select a machine for the task
+
+Reward:
+- Reward efficient resource allocation
+- Penalize resource overload
+- Penalize resource wastage
+
+Data Processing Strategy
+
+The complete Alibaba trace will not be processed initially.
+
+A representative subset of the trace will be selected
+for the first implementation and experimentation.
+
+The subset will include:
+- Task records
+- Instance records
+- Machine metadata
+- Machine resource usage
+
+After validating the complete ML/RL pipeline, the dataset
+size can be increased for further experimentation.
+
+Sampling will be based on the workload/time characteristics
+rather than blindly selecting the first rows.
+
+
+
+
+Original records       : 10,000
+Complete records       : 8,984
+Incomplete records     : 1,016
+Usable data            : 89.84%

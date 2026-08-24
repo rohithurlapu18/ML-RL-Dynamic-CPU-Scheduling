@@ -1,0 +1,241 @@
+# ============================================================
+# ML + RL Dynamic CPU Scheduling Project
+# Git Ignore Configuration
+# ============================================================
+
+
+# ============================================================
+# 1. PYTHON VIRTUAL ENVIRONMENTS
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+
+
+# ============================================================
+# 2. PYTHON CACHE / COMPILED FILES
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+
+# ============================================================
+# 3. JUPYTER
+# ============================================================
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# 4. LARGE DATASET FILES
+# ============================================================
+
+# CSV files directly inside dataset/
+dataset/*.csv
+
+# CSV files in dataset subdirectories
+dataset/**/*.csv
+
+# Parquet
+dataset/*.parquet
+dataset/**/*.parquet
+
+# Pickle datasets
+dataset/*.pkl
+dataset/**/*.pkl
+
+# NumPy datasets
+dataset/*.npy
+dataset/**/*.npy
+dataset/*.npz
+dataset/**/*.npz
+
+# Compressed datasets
+dataset/*.zip
+dataset/**/*.zip
+
+dataset/*.tar
+dataset/**/*.tar.gz
+dataset/**/*.tgz
+dataset/**/*.7z
+dataset/**/*.rar
+
+
+# ============================================================
+# 5. LARGE DATASET SUBDIRECTORIES
+# ============================================================
+
+# Your partitioned 20 GB dataset
+dataset/usage_partitions/
+
+# Raw data
+dataset/raw/
+
+# Processed/generated data
+dataset/processed/
+
+# Temporary dataset files
+dataset/temp/
+dataset/tmp/
+
+
+# ============================================================
+# 6. LARGE ML / RL MODEL FILES
+# ============================================================
+
+# PyTorch
+*.pt
+*.pth
+
+# Keras / TensorFlow
+*.h5
+*.keras
+
+# Scikit-learn
+*.joblib
+
+# Pickle models
+*.pkl
+
+# ONNX
+*.onnx
+
+# Stable-Baselines3 / RL models
+*.zip
+
+# TensorFlow SavedModel
+saved_model/
+
+# ML model directories
+models/checkpoints/
+models/checkpoint/
+checkpoints/
+
+
+# ============================================================
+# 7. PROJECT-SPECIFIC MODEL DIRECTORY
+# ============================================================
+
+# Your dataset/models contains trained PPO/XGBoost models
+dataset/models/
+
+
+# ============================================================
+# 8. LOGS
+# ============================================================
+
+logs/
+*.log
+
+dataset/logs/
+
+
+# ============================================================
+# 9. TENSORBOARD
+# ============================================================
+
+runs/
+tensorboard/
+tb_logs/
+
+
+# ============================================================
+# 10. TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+
+# ============================================================
+# 11. ENVIRONMENT VARIABLES / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+
+# ============================================================
+# 12. IDE FILES
+# ============================================================
+
+.vscode/
+.idea/
+
+*.iml
+
+
+# ============================================================
+# 13. JETBRAINS
+# ============================================================
+
+*.iws
+*.ipr
+
+
+# ============================================================
+# 14. WINDOWS / MACOS SYSTEM FILES
+# ============================================================
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# ============================================================
+# 15. PYTHON TEST / COVERAGE
+# ============================================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+
+# ============================================================
+# 16. BUILD / DISTRIBUTION
+# ============================================================
+
+build/
+dist/
+*.egg-info/
+
+
+# ============================================================
+# 17. LOCAL EXPERIMENT OUTPUTS
+# ============================================================
+
+outputs/
+output/
+experiments/
+experiment_results/
+
+
+# ============================================================
+# 18. LARGE GENERATED RESULTS
+# ============================================================
+
+results/raw/
+results/large/
+results/generated/
+
+
+# ============================================================
+# END
+# ============================================================

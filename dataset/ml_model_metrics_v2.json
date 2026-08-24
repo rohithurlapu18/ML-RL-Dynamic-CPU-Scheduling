@@ -1,0 +1,50 @@
+{
+    "model": "XGBRegressor_v2",
+    "target": "assignment_cost",
+    "features": [
+        "task_type",
+        "cpu_avg",
+        "cpu_max",
+        "mem_avg",
+        "mem_max",
+        "task_duration",
+        "cpu_demand_ratio",
+        "mem_demand_ratio",
+        "log_cpu_demand",
+        "log_mem_demand",
+        "cpu_num",
+        "mem_size",
+        "cpu_util",
+        "mem_util",
+        "cpu_pressure",
+        "mem_pressure",
+        "bottleneck_pressure",
+        "cpu_headroom",
+        "mem_headroom",
+        "cpu_fit_ratio",
+        "mem_fit_ratio"
+    ],
+    "random_seed": 42,
+    "num_tasks": 8979,
+    "train_tasks": 6285,
+    "validation_tasks": 1347,
+    "test_tasks": 1347,
+    "train_rows": 31425,
+    "validation_rows": 6735,
+    "test_rows": 6735,
+    "training_metrics": {
+        "MAE": 0.001289405485420457,
+        "RMSE": 0.004655861600712349,
+        "R2": 0.9999735344309221
+    },
+    "validation_metrics": {
+        "MAE": 0.0016243519381198216,
+        "RMSE": 0.006319226290268123,
+        "R2": 0.9999520900878721
+    },
+    "test_metrics": {
+        "MAE": 0.0020360766031144503,
+        "RMSE": 0.012212999538055208,
+        "R2": 0.9998139904049538
+    }
+}

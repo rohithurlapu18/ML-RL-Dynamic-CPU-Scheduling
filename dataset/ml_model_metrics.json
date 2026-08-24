@@ -1,0 +1,62 @@
+{
+    "model": "XGBRegressor",
+    "target": "assignment_cost",
+    "features": [
+        "task_type",
+        "cpu_avg",
+        "cpu_max",
+        "mem_avg",
+        "mem_max",
+        "task_duration",
+        "cpu_demand_ratio",
+        "mem_demand_ratio",
+        "log_cpu_demand",
+        "log_mem_demand",
+        "cpu_num",
+        "mem_size",
+        "cpu_util",
+        "mem_util",
+        "cpu_pressure",
+        "mem_pressure",
+        "bottleneck_pressure",
+        "cpu_headroom",
+        "mem_headroom",
+        "cpu_fit_ratio",
+        "mem_fit_ratio",
+        "estimated_cpu_pressure",
+        "estimated_mem_pressure",
+        "log_estimated_cpu_pressure",
+        "log_estimated_mem_pressure",
+        "estimated_bottleneck",
+        "normalized_estimated_cpu",
+        "normalized_duration",
+        "normalized_cpu_demand",
+        "normalized_mem_demand",
+        "cpu_feasible",
+        "mem_feasible",
+        "feasible"
+    ],
+    "random_seed": 42,
+    "num_tasks": 8979,
+    "train_tasks": 6285,
+    "validation_tasks": 1347,
+    "test_tasks": 1347,
+    "train_rows": 31425,
+    "validation_rows": 6735,
+    "test_rows": 6735,
+    "training_metrics": {
+        "MAE": 0.0005573165463917097,
+        "RMSE": 0.0011338679499838034,
+        "R2": 0.9999984303382621
+    },
+    "validation_metrics": {
+        "MAE": 0.0006470916370306819,
+        "RMSE": 0.0013512193206755931,
+        "R2": 0.999997809469765
+    },
+    "test_metrics": {
+        "MAE": 0.0007178184088837902,
+        "RMSE": 0.0017010732173438144,
+        "R2": 0.9999963914171595
+    }
+}
